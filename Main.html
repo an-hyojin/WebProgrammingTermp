@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head lang="ko">
+    <meta charset ="utf-8"></meta>
+    <title>독서권장 페이지</title>
+    <link rel="stylesheet" href="Main.css">
+  </head>
+  <body onload="isLogin()">
+    <h1>독서권장 페이지</h1>
+    <button onclick="logoutFunction()" id="logoutButton">log out</button>
+    <button onclick="showLoginModal()" id="showLoginButton">Log In</button>
+    <div id ="navi">
+      <ul id="list">
+        <li><a >Main</a></li>
+        <li><a href="BestSeller.html">베스트 셀러 추천</a></li>
+        <li><a href="BookReport.html">독후감</a></li>
+        <li><a href="Map.html">근처 도서관, 서점 위치 보기</a></li>
+      </ul>
+    </div>
+    <div id = "main">
+
+
+      <div id="explain">
+      <h2>독서를 좋아하는 사람들을 위한 페이지입니다. </h2>
+      <ul id="explain_li">
+        <li><h3>베스트 셀러 추천</h3></li>
+          인터파크 API를 사용하여 높은 판매고를 기록하고 있는 책의 리스트를 보여줍니다.<br>
+          검색란에 검색하면 해당 입력을 가지고 있는 책의 리스트를 볼 수 있습니다.
+        <li><h3>독후감</h3></li>
+          로그인을 한 후, 글을 추가하거나 삭제할 수 있습니다.<br>
+          읽은 책에 대한 기록을 남겨보세요.
+        <li><h3>근처 도서관, 서점 위치 보기</h3></li>
+          근방의 도서관이나 서점의 위치를 Google Map으로 확인할 수 있습니다.
+        </ul>
+      </div>
+      <div id="searchModal" class="modal">
+         <div class="modal-content">
+              <input type="text" id="idElement" placeholder="id"><br>
+             <input type="password" id="passwordElement" placeholder="password"><br>
+             <button id="loginButton" onclick="loginFunction()">login</button>
+             <button id="joinButton" onclick="joinFunction()">join</button>
+
+         </div>
+    </div>
+    <div id ="footer">
+    </div>
+    <script src ="Main.js"></script>
+  </body>
+</html>

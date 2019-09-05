@@ -1,0 +1,91 @@
+h1{
+  color:#bccb00;
+  display: inline;
+}
+
+#header{
+    background-color: #bcce52;
+  padding:15px;
+}
+
+#list li a{
+  display: block;
+  color:white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#list li{
+  float:left;
+}
+h3{
+  display: inline;
+}
+#main{
+  height:auto;
+  border:1px solid #bcca00;
+}
+.headcontainer{
+  display: inline-block;
+  width:40%;
+}
+.removeButton{
+  float:right;
+}
+button{
+  border:none;
+  color:black;
+  background-color:white;
+  border:2px solid #bcce52;
+}
+.listContext{
+  display:none;
+}
+#showLoginButton{
+  float:right;
+}
+#logoutButton{
+  float:right;
+  display: none;
+}
+#loginButton, #joinButton, #logoutButton, #showLoginButton{
+  align:right;
+}
+
+button:hover{
+  background-color:#bcce52;
+  color:white;
+}
+#addButton{
+  float:right;
+  display:none;
+}
+#list{
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  background-color: #bcce52;
+}
+#list li a:hover{
+    background-color: #bccb00;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  width : 100%;
+  top: 0;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+  background-color: #fefefe;
+  margin:20% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width:300px;
+  text-align : center;
+}

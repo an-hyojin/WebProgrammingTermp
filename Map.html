@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head lang="ko">
+    <meta charset ="utf-8"></meta>
+    <title>독서권장 페이지</title>
+
+      <link rel="stylesheet" href="Map.css">
+  </head>
+  <body>
+    <h1>독서권장 페이지</h1>
+    <button onclick="logoutFunction()" id="logoutButton">log out</button>
+    <button onclick="showLoginModal()" id="showLoginButton">Log In</button>
+    
+    <div id ="navi">
+    <ul id="list">
+      <li><a href="Main.html">Main</a></li>
+      <li><a href="BestSeller.html">베스트 셀러 추천</a></li>
+      <li><a href="BookReport.html">독후감</a></li>
+      <li><a>근처 도서관, 서점 위치 보기</a></li>
+
+    </ul>
+  </div>
+    <div id = "main">
+      <div id="map"></div>
+    </div>
+    <div id="searchModal" class="modal">
+       <div class="modal-content">
+            <input type="text" id="idElement" placeholder="id"><br>
+           <input type="password" id="passwordElement" placeholder="password"><br>
+           <button id="loginButton" onclick="loginFunction()">login</button>
+           <button id="joinButton" onclick="joinFunction()">join</button>
+
+       </div>
+  </div>
+    <div id ="footer">
+    </div>
+
+    <script src="Map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUH6NCYsyr56fpDDoi1R-Y9Czgx4oBTO8&callback=initMap" async defer></script>
+
+  </body>
+</html>

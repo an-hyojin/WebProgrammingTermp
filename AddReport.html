@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head lang="ko">
+    <meta charset ="utf-8"></meta>
+    <title>독서권장 페이지</title>
+    <link rel="stylesheet" href="AddReport.css">
+  </head>
+  <body>
+    <h1>독서권장 페이지</h1>
+    <div id ="navi">
+    <ul id="list">
+      <li><a href="Main.html">Main</a></li>
+      <li><a href="BestSeller.html">베스트 셀러 추천</a></li>
+      <li><a href="BookReport.html">독후감</a></li>
+      <li><a href="Map.html">근처 도서관, 서점 위치 보기</a></li>
+    </ul>
+    </div>
+    <div id = "main">
+       책 제목 : <input size="60" type="text" id ="title"> <span> </span><button id="saveButton" onclick="save()">저장</button><br>
+       <textarea id="text" name="content" rows="20" cols="80"></textarea>
+    </div>
+    <div id ="footer">
+    </div>
+    <script src ="AddReport.js"></script>
+  </body>
+</html>
